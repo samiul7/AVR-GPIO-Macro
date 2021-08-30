@@ -14,19 +14,19 @@
 
 int main(void)
 {	
-	PIN_MODE(PB7,OUTPUT);
-	PIN_MODE(PB6,INPUT_PULLUP);
+    PIN_MODE(PB7,OUTPUT);
+    PIN_MODE(PB6,INPUT_PULLUP);
 	  
     while (1) 
     {
-		//TOGGLE(PB7);
-		if(!READ(PB6))
-		{
-			WRITE(PB7,HIGH);
-			_delay_ms(30);
-			WRITE(PB7,LOW);
-			_delay_ms(30);
-		}
+	//TOGGLE(PB7);
+	if(!READ(PB6))
+	{
+	     WRITE(PB7,HIGH);
+	     _delay_ms(30);
+	     WRITE(PB7,LOW);
+	     _delay_ms(30);
+	}
     }
 }
 
