@@ -50,7 +50,7 @@ void mappingPWM()
 {
   uint16_t adc_data = analogRead(ADC_PIN);
   //map motor speed (x - in_min) * (out_max - out_min) / (in_max - in_min) + out_min;
-  uint16_t pump_speed = (long)(adc_data - MIN_ADC_Value) * (long)((ISR_TOP_Value-2) - 0) / (long)(MAX_ADC_Value - MIN_ADC_Value) + 0; //7998 is max pwm value instend of 8000
+  uint16_t pump_speed = (long)(adc_data - MIN_ADC_Value) * (long)((ISR_TOP_Value-2) - 0) / (long)(MAX_ADC_Value - MIN_ADC_Value) + 0; //998 is max pwm value instend of 1000
   //Serial.println(pump_speed);
   OCR1C = pump_speed; //pwm update
   Serial.println(OCR1C);
