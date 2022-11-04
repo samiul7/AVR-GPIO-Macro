@@ -1,0 +1,8 @@
+EESchema-DOCLIB  Version 2.0
+#
+$CMP IRF640
+D NMOS 200V 18A 150mR [TO-220]
+F http://www.irf.com/product-info/datasheets/data/irf640npbf.pdf
+$ENDCMP
+#
+#End Doc Library
